@@ -10824,7 +10824,7 @@ var About = function About() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cabout.js ***!
   \********************************************************************************************************************************************/
@@ -10847,5 +10847,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map

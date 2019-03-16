@@ -23,7 +23,7 @@ class TaskItem extends React.Component {
 							this.props.handleDelete(id);
 						}}
 					>
-						X
+						DEL
 					</button>
 				</p>
 			</div>
@@ -35,7 +35,7 @@ const btnStyle = {
 	background: "#ff0000",
 	color: "#fff",
 	border: "1px solid #ccc",
-	borderRadius: "50%",
+	borderRadius: "20%",
 	padding: "5px 10px",
 	cursor: "pointer",
 	float: "right"
