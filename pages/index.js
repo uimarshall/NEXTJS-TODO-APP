@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import AddTask from "../components/AddTask";
 import Tasks from "../components/Tasks";
+import Fetch from 'isomorphic-unfetch';
 
 class Index extends React.Component {
 	state = {
@@ -18,6 +19,11 @@ class Index extends React.Component {
 			{
 				id: 3,
 				title: "Go for recreation with family",
+				completed: false
+			},
+			{
+				id: 4,
+				title: "Play basket ball",
 				completed: false
 			}
 		]
@@ -65,4 +71,9 @@ class Index extends React.Component {
 	}
 }
 
+// Index.getInitialProps =  async function(){
+// 	const res = await fetch('api/items');
+// 	const data = await res.json();
+// 	return data;
+// }
 export default Index;

@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\components\\AddTask.js";
+var _jsxFileName = "C:\\Users\\COC UNILAG\\Desktop\\NEXTJS-TODO-APP\\components\\AddTask.js";
 
 
 var AddTask =
@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-server/head */ "./node_modules/next-server/head.js");
 /* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\COC UNILAG\\Desktop\\NEXTJS-TODO-APP\\components\\Layout.js";
 
 
 
@@ -202,7 +202,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\components\\Navbar.js";
+var _jsxFileName = "C:\\Users\\COC UNILAG\\Desktop\\NEXTJS-TODO-APP\\components\\Navbar.js";
 
 
 
@@ -318,7 +318,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\components\\TaskItem.js";
+var _jsxFileName = "C:\\Users\\COC UNILAG\\Desktop\\NEXTJS-TODO-APP\\components\\TaskItem.js";
 
 
 var TaskItem =
@@ -422,34 +422,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _TaskItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TaskItem */ "./components/TaskItem.js");
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\components\\Tasks.js";
 
  // In UI based Comp, we pass the props as an obj to the comp
 
 var Tasks = function Tasks(_ref) {
   var tasks = _ref.tasks,
       markComplete = _ref.markComplete,
-      handleDelete = _ref.handleDelete;
+      handleDelete = _ref.handleDelete,
+      props = _ref.props;
   return tasks.length ? tasks.map(function (task) {
     // pass each 'task' mapped as props to TaskItem
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TaskItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: task.id,
       task: task,
       markComplete: markComplete,
-      handleDelete: handleDelete,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
+      handleDelete: handleDelete
     });
-  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "No tasks yet!");
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "No tasks yet!");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Tasks);
@@ -5347,6 +5336,33 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
+/***/ "./node_modules/isomorphic-unfetch/browser.js":
+/*!****************************************************!*\
+  !*** ./node_modules/isomorphic-unfetch/browser.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs").default || __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs"));
+
+
+/***/ }),
+
+/***/ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function(e,n){return n=n||{},new Promise(function(t,r){var s=new XMLHttpRequest,o=[],u=[],i={},a=function(){return{ok:2==(s.status/100|0),statusText:s.statusText,status:s.status,url:s.responseURL,text:function(){return Promise.resolve(s.responseText)},json:function(){return Promise.resolve(JSON.parse(s.responseText))},blob:function(){return Promise.resolve(new Blob([s.response]))},clone:a,headers:{keys:function(){return o},entries:function(){return u},get:function(e){return i[e.toLowerCase()]},has:function(e){return e.toLowerCase()in i}}}};for(var l in s.open(n.method||"get",e,!0),s.onload=function(){s.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm,function(e,n,t){o.push(n=n.toLowerCase()),u.push([n,t]),i[n]=i[n]?i[n]+","+t:t}),t(a())},s.onerror=r,s.withCredentials="include"==n.credentials,n.headers)s.setRequestHeader(l,n.headers[l]);s.send(n.body||null)})});
+//# sourceMappingURL=unfetch.mjs.map
+
+
+/***/ }),
+
 /***/ "./node_modules/next-server/dist/lib/head-manager-context.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/next-server/dist/lib/head-manager-context.js ***!
@@ -6779,10 +6795,10 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js!./":
-/*!***********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js ***!
-  \***********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CCOC%20UNILAG%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js!./":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CCOC%20UNILAG%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js ***!
+  \***************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11034,6 +11050,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_AddTask__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/AddTask */ "./components/AddTask.js");
 /* harmony import */ var _components_Tasks__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Tasks */ "./components/Tasks.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -11042,7 +11060,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\MARSHALL\\Desktop\\NEXTJS-TODO-APP\\pages\\index.js";
+
 
 
 
@@ -11078,6 +11096,10 @@ function (_React$Component) {
       }, {
         id: 3,
         title: "Go for recreation with family",
+        completed: false
+      }, {
+        id: 4,
+        title: "Play basket ball",
         completed: false
       }]
     });
@@ -11121,61 +11143,40 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       // The Component will render and return this jsx to the DOM
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 52
-        },
-        __self: this
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "App"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "App",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        },
-        __self: this
+        className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_AddTask__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        addTask: this.addTask,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
+        addTask: this.addTask
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Tasks__WEBPACK_IMPORTED_MODULE_11__["default"], {
         tasks: this.state.tasks,
         markComplete: this.markComplete,
-        handleDelete: this.handleDelete,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
+        handleDelete: this.handleDelete
       }))));
     }
   }]);
 
   return Index;
-}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component); // Index.getInitialProps =  async function(){
+// 	const res = await fetch('api/items');
+// 	const data = await res.json();
+// 	return data;
+// }
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
 /***/ 1:
-/*!***************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js ***!
-  \***************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CCOC%20UNILAG%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js ***!
+  \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CMARSHALL%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CCOC%20UNILAG%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CCOC%20UNILAG%5CDesktop%5CNEXTJS-TODO-APP%5Cpages%5Cindex.js!./");
 
 
 /***/ }),
