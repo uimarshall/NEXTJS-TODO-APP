@@ -1,33 +1,20 @@
 import Layout from "../components/Layout";
 import AddTask from "../components/AddTask";
 import Tasks from "../components/Tasks";
-import Fetch from 'isomorphic-unfetch';
+import fetch from 'isomorphic-unfetch';
 
 class Index extends React.Component {
-	state = {
-		tasks: [
-			{
-				id: 1,
-				title: "Push updates to github",
-				completed: false
-			},
-			{
-				id: 2,
-				title: "Plan for sunday metting",
-				completed: false
-			},
-			{
-				id: 3,
-				title: "Go for recreation with family",
-				completed: false
-			},
-			{
-				id: 4,
-				title: "Play basket ball",
-				completed: false
-			}
-		]
-	};
+	
+	static async getInitialProps() {
+    const res = await fetch('http://localhost:3000/api/items')
+    const tasks = await res.json()
+    return { tasks }
+  }
+  componentWillMount() {
+    this.setState({
+      tasks: this.props.tasks
+    })
+  }
 	markComplete = id => {
 		this.setState({
 			tasks: this.state.tasks.map(task => {
@@ -71,9 +58,5 @@ class Index extends React.Component {
 	}
 }
 
-// Index.getInitialProps =  async function(){
-// 	const res = await fetch('api/items');
-// 	const data = await res.json();
-// 	return data;
-// }
+
 export default Index;

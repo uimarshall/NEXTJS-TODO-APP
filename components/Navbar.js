@@ -8,15 +8,15 @@ const Navbar = () => (
 			<div className="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item">
-						<Link>
-							<a className="nav-link" href="/">
+						<Link href="/">
+							<a className="nav-link">
 								Home
 							</a>
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link>
-							<a className="nav-link" href="/about">
+						<Link href="/about">
+							<a className="nav-link">
 								About
 							</a>
 						</Link>
